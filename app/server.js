@@ -3,11 +3,11 @@ const bodyParser = require("body-parser");
 const bcrypt = require("bcryptjs");
 const cors = require("cors");
 const knex = require("knex");
-const user = require("../face-recognition-model-api/user");
-const signup = require("./controllers/signup");
-const signin = require("./controllers/signin");
-const profile = require("./controllers/profile");
-const image = require("./controllers/image");
+const user = require("../user");
+const signup = require("../controllers/signup");
+const signin = require("../controllers/signin");
+const profile = require("../controllers/profile");
+const image = require("../controllers/image");
 
 const db = knex({
   client: "pg",
